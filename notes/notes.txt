@@ -1,0 +1,23 @@
+React Native 
+--> it is cross platfrom toolkit which help to develop the mobile apps
+
+==================================================================================
+Lecture 01
+
+-> learn about the veiw, text and Button i.e code
+
+ <View style={style.mainContainer}>
+      <Text>My name is Shaharyar Ali</Text>
+      <Text>As a Mobile Application developer</Text>
+      <Button title='Continue' />
+      <Firstcomp />
+</View>
+
+==================================================================================
+
+Lecture 02
+
+-> learn about the components like in flutter is called widgets.. 
+funtional components
+code base components
+
