@@ -1,5 +1,6 @@
 import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
+import Firstcomp from './src/components/firstcomp'
 
 const App = () => {
   return (
@@ -7,9 +8,8 @@ const App = () => {
       <Text>My name is Shaharyar Ali</Text>
       <Text>As a Mobile Application developer</Text>
       <Button title='Continue' />
+      <Firstcomp />
     </View>
-
-
   )
 }
 
