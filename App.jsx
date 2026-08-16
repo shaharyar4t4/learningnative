@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
-import Firstcomp from './src/components/firstcomp'
+import Firstcomp from './src/components/Firstcomp'
+import LearnJsx  from './src/components/LearnJsx'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Text>As a Mobile Application developer</Text>
       <Button title='Continue' />
       <Firstcomp />
+      <LearnJsx/>
     </View>
   )
 }

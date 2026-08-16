@@ -21,3 +21,16 @@ Lecture 02
 funtional components
 code base components
 
+=================================================================================
+
+lecture 03
+
+learn about the JSX  ==> Javascript syntex extension it help to write the code in just one file. no need to the id call of other stuff..
+but ik limitation ha exparation ko use nhi karsaata direct code me like "let name = 'shaharyar';" ho but statment ko use karta ha like in code {name}..
+
+==================================================================================
+
+lecture 04
+
+Learn about Button components like how it call in separatly..
+
