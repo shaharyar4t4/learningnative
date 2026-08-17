@@ -37,6 +37,20 @@ Learn about Button components like how it call in separatly..
 
 ==================================================================================
 
-lecture 05
+lecture 05 --- UseStackHook
+
+name --> actual variable hota ha 
+setName ---> ye rendar karna kiya liya hota ha ..
+
+array is become the destructure. end me useState ko call karya ga ..
+
+// arr = [1, 2, 3];
+// arr[one] = 1 // 0 index me ik value add karva do 
+// arr[two] = 2 // 1 infex me ik value add karva do
+// arr[three] = 3 // 3 index me ik value add karva do 
+
+// is masla ko solve karna kiya liya JS na feature ko introduc kiya ha.. called array destructure.
+        //  1    2     3
+// const [arr1, arr2, arr3] = arr
 
 
