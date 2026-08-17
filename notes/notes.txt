@@ -33,4 +33,10 @@ but ik limitation ha exparation ko use nhi karsaata direct code me like "let nam
 lecture 04
 
 Learn about Button components like how it call in separatly..
+1. call a function by using button..
+
+==================================================================================
+
+lecture 05
+
 

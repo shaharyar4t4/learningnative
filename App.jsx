@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
 import Buttonlearn from './src/components/Buttonlearn'
+import UseStateHook from './src/components/UseStateHook'
 // import Firstcomp from './src/components/Firstcomp'
 // import LearnJsx  from './src/components/LearnJsx'
 
@@ -13,7 +14,8 @@ const App = () => {
       <Button title='Continue' />
       <Firstcomp />
       <LearnJsx/> */}
-      <Buttonlearn/>
+      {/* <Buttonlearn/> */}
+      <UseStateHook/>
     </View>
   )
 }
