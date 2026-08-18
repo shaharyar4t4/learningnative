@@ -54,3 +54,13 @@ array is become the destructure. end me useState ko call karya ga ..
 // const [arr1, arr2, arr3] = arr
 
 
+======================================================================================
+
+Leature 06  --- Props and child
+Props is also know as ha Propertry..
+
+Props  --> is me bohat child call horaha is ko parent component Child component ka...  
+
+child ---> Mean kese bha components me call hota is ko hum child component bolta ha..
+
+
