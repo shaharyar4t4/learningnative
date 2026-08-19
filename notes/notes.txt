@@ -74,3 +74,9 @@ their is Propertry
 --> placeHolder 'Enter your name' // mention the lables..
 --> more thing are available ha ..
 
+======================================================================================
+
+Lecture 08 -- Styling
+
+--> inline Styling..
+--> external Styling..
