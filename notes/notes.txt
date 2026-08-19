@@ -63,4 +63,14 @@ Props  --> is me bohat child call horaha is ko parent component Child component 
 
 child ---> Mean kese bha components me call hota is ko hum child component bolta ha..
 
+======================================================================================
+
+Leature 07 --- InputTextfield
+
+Learn about the textfield like how user give a input value..
+
+their is Propertry
+--> onChange = {(value) => setName(Value)} // always assign the premeter like ye ha par me na value variable ko assign kiya ha...
+--> placeHolder 'Enter your name' // mention the lables..
+--> more thing are available ha ..
 
