@@ -5,6 +5,7 @@ import React from 'react'
 // import UseStateHook from './src/components/UseStateHook'
 import InputText from './src/components/InputText'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import Styling from './src/components/Styling'
 // import Firstcomp from './src/components/Firstcomp'
 // import LearnJsx  from './src/components/LearnJsx'
 
@@ -12,16 +13,17 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 const App = () => {
   return (
     <SafeAreaProvider style={style.mainContainer}>
-        {/* <Text>My name is Shaharyar Ali</Text>
+      {/* <Text>My name is Shaharyar Ali</Text>
             <Text>As a Mobile Application developer</Text>
             <Button title='Continue' />
             <Firstcomp />
             <LearnJsx/> */}
-        {/* <Buttonlearn/> */}
-        {/* <UseStateHook/> */}
-        {/* <Props /> */}
+      {/* <Buttonlearn/> */}
+      {/* <UseStateHook/> */}
+      {/* <Props /> */}
 
-        <InputText />
+      {/* <InputText /> */}
+      <Styling />
     </SafeAreaProvider>
 
   )

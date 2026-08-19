@@ -79,4 +79,7 @@ their is Propertry
 Lecture 08 -- Styling
 
 --> inline Styling..
+--> internal Styling..
 --> external Styling..
+
+ik question yehe bnta sub css jo ha work karta ha inline Css q kiya wo code kiya under in build hota ha ..
