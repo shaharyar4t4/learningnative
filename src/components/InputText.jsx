@@ -9,7 +9,6 @@ const InputText = () => {
             <TextInput style={{ borderWidth: 1, borderRadius: 5, color: '#000' }} placeholder='Enter your Usernames' value={username} onChangeText={(value) => setusername(value)} />
             <Text style={{ fontSize: 20 }}>Your Username is: {username}</Text>
             <Button title='Continous' onPress={() => setusername('')} />
-
         </View>
     )
 }
