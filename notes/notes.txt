@@ -83,3 +83,10 @@ Lecture 08 -- Styling
 --> external Styling..
 
 ik question yehe bnta sub css jo ha work karta ha inline Css q kiya wo code kiya under in build hota ha ..
+
+========================================================================================
+
+Lecture 09 -- Flate List..
+
+flate list is help to rendar the data but make sure ye in he list ko rendar karta ha jo Array kiya formate me hota ha ...
+inshort flate list humsha aray kiya dataset par kam karta ha..

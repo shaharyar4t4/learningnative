@@ -1,12 +1,13 @@
-import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native'
+import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
-import Loginform from './src/components/Loginform'
+// import Loginform from './src/components/Loginform'
+import FlatListexample  from './src/components/FlatListexample'
 // import Props from './src/components/Props'
 // import Buttonlearn from './src/components/Buttonlearn'
 // import UseStateHook from './src/components/UseStateHook'
-import InputText from './src/components/InputText'
+// import InputText from './src/components/InputText'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import Styling from './src/components/Styling'
+// import Styling from './src/components/Styling'
 // import Firstcomp from './src/components/Firstcomp'
 // import LearnJsx  from './src/components/LearnJsx'
 
@@ -25,7 +26,8 @@ const App = () => {
 
       {/* <InputText /> */}
       {/* <Styling /> */}
-      <Loginform/>
+      {/* <Loginform/> */}
+      <FlatListexample/>
     </SafeAreaProvider>
 
   )
