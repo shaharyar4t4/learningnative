@@ -6,15 +6,18 @@ const Loginform = () => {
     const [password, setPassword] = useState('');
     return (
         <View style={styles.mainContainer}>
-            <Text style={styles.heading}>Login</Text>
+            <Text style={styles.heading}>Login Screen</Text>
             <TextInput
                 style={styles.field}
-                placeholder='Enter your Usernames' value={name}
+                placeholder='Enter your Username'
+                value={name}
                 onChangeText={(value) => setName(value)}
             />
             <TextInput
                 style={styles.field}
-                placeholder='Enter your Password' value={password}
+                placeholder='Enter your Password'
+                value={password}
+                secureTextEntry
                 onChangeText={(value) => setPassword(value)}
             />
             <Text style={styles.txt} >Your Name is: {name}</Text>
@@ -25,7 +28,8 @@ const Loginform = () => {
                     setName('');
                     setPassword('');
                 }}
-            />        </View>
+            />
+        </View>
     )
 }
 
