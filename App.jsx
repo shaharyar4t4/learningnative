@@ -1,5 +1,6 @@
 import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native'
 import React from 'react'
+import Loginform from './src/components/Loginform'
 // import Props from './src/components/Props'
 // import Buttonlearn from './src/components/Buttonlearn'
 // import UseStateHook from './src/components/UseStateHook'
@@ -23,7 +24,8 @@ const App = () => {
       {/* <Props /> */}
 
       {/* <InputText /> */}
-      <Styling />
+      {/* <Styling /> */}
+      <Loginform/>
     </SafeAreaProvider>
 
   )
