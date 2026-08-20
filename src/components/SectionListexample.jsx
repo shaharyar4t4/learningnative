@@ -33,10 +33,10 @@ const SectionListexample = () => {
     );
     return (
         <View style={styles.container}>
-            <Text>SectionList</Text>
+            <Text style={styles.title}>SectionList</Text>
             <SectionList
                 // refer the data
-                section={listItems}
+                sections={listItems}
                 // the data in nested formate
                 renderItem={renderItems}
                 // get the title like furit title 
@@ -50,7 +50,7 @@ const SectionListexample = () => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#fff',
         paddingTop: 15,
     },
     item: {
