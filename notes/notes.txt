@@ -90,3 +90,14 @@ Lecture 09 -- Flate List..
 
 flate list is help to rendar the data but make sure ye in he list ko rendar karta ha jo Array kiya formate me hota ha ...
 inshort flate list humsha aray kiya dataset par kam karta ha..
+
+is kiya three part hota ha 
+1. data --> refer the data sources 
+2. renderItem --> rendar list of renderItem
+3. keyExtractor --> refer the specific Id in list..
+4. contentContainerStyle --> apply the CSS in list..
+
+
+=======================================================================================
+
+Lecture 10 -- Section List..
