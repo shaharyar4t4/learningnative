@@ -1,17 +1,18 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
+import ContactListScreen from './src/screen/contact/ContactListScreen'
 // import Loginform from './src/components/Loginform'
 // import FlatListexample  from './src/components/FlatListexample'
 // import Props from './src/components/Props'
 // import Buttonlearn from './src/components/Buttonlearn'
 // import UseStateHook from './src/components/UseStateHook'
 // import InputText from './src/components/InputText'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
-import Loginscreen from './src/components/Loginscreen'
+// import { SafeAreaProvider } from 'react-native-safe-area-context'
+// import Loginscreen from './src/components/Loginscreen'
 // import Styling from './src/components/Styling'
 // import Firstcomp from './src/components/Firstcomp'
 // import LearnJsx  from './src/components/LearnJsx'
-import SectionListexample from './src/components/SectionListexample'
+// import SectionListexample from './src/components/SectionListexample'
 
 const App = () => {
   return (
@@ -31,7 +32,8 @@ const App = () => {
       {/* <FlatListexample/> */}
       {/* <SectionListexample /> */}
 
-      <Loginscreen />
+      {/* <Loginscreen /> */}
+      <ContactListScreen/>
 
     </View>
 
