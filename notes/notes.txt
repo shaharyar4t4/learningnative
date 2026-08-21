@@ -110,4 +110,10 @@ Lecture 11 -- make a Login
 
 Leaning about TextInput, Array destructure and TouchableOpacity use to make the Login Form Ui..
 
+=========================================================================================
+
+Lecture 12 -- Inductry level folder structure 
+
+Learing about how folder structure is create which mostly use in code structure..
+
 
