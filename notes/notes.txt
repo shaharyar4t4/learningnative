@@ -102,4 +102,4 @@ is kiya three part hota ha
 
 Lecture 10 -- Section List..
 
-Section list is help to render the Nested Array data
+Section list is help to render the Nested Array data formate and also show in the form of title and their lists.
