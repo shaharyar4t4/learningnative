@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#add8e6',
         padding: 10,
         marginVertical: 5,
-        borderRadius: 5,
+        borderRadius: 8,
     },
     title: {
         fontSize: 18,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     header: {
         backgroundColor: '#90ee90',
         padding: 10,
-        borderRadius: 5,
+        borderRadius: 8,
         marginVertical: 5,
     },
     headerTitle: {
