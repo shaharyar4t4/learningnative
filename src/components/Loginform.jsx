@@ -22,6 +22,7 @@ const Loginform = () => {
             />
             <Text style={styles.txt} >Your Name is: {name}</Text>
             <Text style={styles.txt} >Your Password is: {password}</Text>
+            {/*learning about the how to reset the textfields*/}
             <Button
                 title="Continue"
                 onPress={() => {

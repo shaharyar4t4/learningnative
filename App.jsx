@@ -7,15 +7,15 @@ import React from 'react'
 // import UseStateHook from './src/components/UseStateHook'
 // import InputText from './src/components/InputText'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import Loginscreen from './src/components/Loginscreen'
 // import Styling from './src/components/Styling'
 // import Firstcomp from './src/components/Firstcomp'
 // import LearnJsx  from './src/components/LearnJsx'
 import SectionListexample from './src/components/SectionListexample'
 
-
 const App = () => {
   return (
-    <SafeAreaProvider style={style.mainContainer}>
+    <View style={styles.container}>
       {/* <Text>My name is Shaharyar Ali</Text>
             <Text>As a Mobile Application developer</Text>
             <Button title='Continue' />
@@ -29,21 +29,22 @@ const App = () => {
       {/* <Styling /> */}
       {/* <Loginform/> */}
       {/* <FlatListexample/> */}
-      <SectionListexample />
-    </SafeAreaProvider>
+      {/* <SectionListexample /> */}
+
+      <Loginscreen />
+
+    </View>
+
 
   )
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f0f0f0',
+
+  },
+});
 export default App;
 
-const style = StyleSheet.create({
-
-  mainContainer: {
-    padding: 20,
-    gap: 20,
-    // paddingTop: 40,
-    // paddingHorizontal: 20,
-    backgroundColor: "#fff",
-  }
-});

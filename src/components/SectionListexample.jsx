@@ -15,7 +15,7 @@ const listItems = [
         data: [
             { id: 4, name: 'Carrot' },
             { id: 5, name: 'Potato' },
-            { id: 6, name: 'Tamatar' },
+            { id: 6, name: 'Tomato' },
         ],
     },
 ];
