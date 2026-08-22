@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import ContactListScreen from './src/screen/contact/ContactListScreen'
+import Gridview from './src/components/Gridview'
+// import ContactListScreen from './src/screen/contact/ContactListScreen'
 // import Loginform from './src/components/Loginform'
 // import FlatListexample  from './src/components/FlatListexample'
 // import Props from './src/components/Props'
@@ -33,8 +34,8 @@ const App = () => {
       {/* <SectionListexample /> */}
 
       {/* <Loginscreen /> */}
-      <ContactListScreen/>
-
+      {/* <ContactListScreen/> */}
+      <Gridview />
     </View>
 
 
@@ -43,6 +44,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
+    padding: 15,
     flex: 1,
     backgroundColor: '#f0f0f0',
 

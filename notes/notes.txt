@@ -116,4 +116,9 @@ Lecture 12 -- Inductry level folder structure
 
 Learing about how folder structure is create which mostly use in code structure..
 
+=========================================================================================
+
+Lecture 13 -- Grid view 
+
+we need the scrollview component just because we no build in function to follow the Grid view..
 
