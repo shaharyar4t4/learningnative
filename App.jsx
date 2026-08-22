@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import Gridview from './src/components/Gridview'
+import Clascompenent from './src/components/Classcomponent'
+// import Gridview from './src/components/Gridview'
 // import ContactListScreen from './src/screen/contact/ContactListScreen'
 // import Loginform from './src/components/Loginform'
 // import FlatListexample  from './src/components/FlatListexample'
@@ -35,7 +36,8 @@ const App = () => {
 
       {/* <Loginscreen /> */}
       {/* <ContactListScreen/> */}
-      <Gridview />
+      {/* <Gridview /> */}
+      <Clascompenent/>
     </View>
 
 

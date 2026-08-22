@@ -122,3 +122,12 @@ Lecture 13 -- Grid view
 
 we need the scrollview component just because we no build in function to follow the Grid view..
 
+=========================================================================================
+
+Lecture 14 -- Class base component
+
+How class base component is working in react native and how to other class in existing class..
+
+-> how to call different class in existing class
+-> How to get the props and also learing about constructor like is me hum na useState ko use kiya ha ..
+
