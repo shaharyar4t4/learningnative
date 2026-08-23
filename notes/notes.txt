@@ -148,3 +148,11 @@ jese ap class base component LifeCycle use karta ha.. but ye fecture funtional c
 Hook ab hai kiya?
 
 basically hook humrhi help karta wo funtion on karna kiya liya jo humraha class base component me build-in hota but funtional component me nhi hota is kiya react native na hook ko bnya ha.. 
+
+=========================================================================================
+
+Lecture 16 -- Mounting  in UseeffectHook
+
+UseeffectHook ko "Mounting Process" me kese use karsaata ha 
+--> useEffect is make the call back function..
+--> [] is refer the call useeffect only one time only
