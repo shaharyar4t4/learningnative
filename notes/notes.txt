@@ -131,3 +131,20 @@ How class base component is working in react native and how to other class in ex
 -> how to call different class in existing class
 -> How to get the props and also learing about constructor like is me hum na useState ko use kiya ha ..
 
+=========================================================================================
+
+Lecture 15 -- LifeCycle
+
+Mounting (inital birth of any components) like constructor always start frist..
+
+Updating (change in this components) like new props setState() froceUpdate()
+
+Unmounting (death of any components in short delete)
+
+this whole is help to in class base components but the case in funtional component we use the useeffectHook 
+
+jese ap class base component LifeCycle use karta ha.. but ye fecture funtional component me nhi ha tu React native na issues ko solve karna kiya hook bnya ha 
+
+Hook ab hai kiya?
+
+basically hook humrhi help karta wo funtion on karna kiya liya jo humraha class base component me build-in hota but funtional component me nhi hota is kiya react native na hook ko bnya ha.. 
