@@ -156,3 +156,15 @@ Lecture 16 -- Mounting  in UseeffectHook
 UseeffectHook ko "Mounting Process" me kese use karsaata ha 
 --> useEffect is make the call back function..
 --> [] is refer the call useeffect only one time only
+
+==========================================================================================
+
+Lecture 17 -- Update in UseeffectHook
+
+UseeffectHook ko "update Process" me kese use karsaata ha 
+
+mention all point in code base ...
+    // case --> let suppose humme it state ko update me call karna by using useeffect wo kese karya ga like me counter ko call karo to console wali line chala or score nhi chala ga..
+    // counter kaya btn par click karta ho tu ye console chala ... but me jab score par click karo ga tu ye nhi chala ga..
+
+
