@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
+import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
+// import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
 // import UseEffectHook from './src/components/UseEffectHook'
 // import Clascompenent from './src/components/Classcomponent'
 // import Gridview from './src/components/Gridview'
@@ -41,7 +42,8 @@ const App = () => {
       {/* <Gridview /> */}
       {/* <Clascompenent/> */}
       {/* <UseEffectHook/> */}
-      <UseEffectHookupdateface/>
+      {/* <UseEffectHookupdateface/> */}
+      <UseEffectHookUnmounting/>
     </View>
 
 

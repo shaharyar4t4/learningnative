@@ -168,3 +168,9 @@ mention all point in code base ...
     // counter kaya btn par click karta ho tu ye console chala ... but me jab score par click karo ga tu ye nhi chala ga..
 
 
+==========================================================================================
+
+Lecture 18 -- UnMounting in UseeffectHook
+
+
+
