@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import UseEffectHook from './src/components/UseEffectHook'
+import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
+// import UseEffectHook from './src/components/UseEffectHook'
 // import Clascompenent from './src/components/Classcomponent'
 // import Gridview from './src/components/Gridview'
 // import ContactListScreen from './src/screen/contact/ContactListScreen'
@@ -39,7 +40,8 @@ const App = () => {
       {/* <ContactListScreen/> */}
       {/* <Gridview /> */}
       {/* <Clascompenent/> */}
-      <UseEffectHook/>
+      {/* <UseEffectHook/> */}
+      <UseEffectHookupdateface/>
     </View>
 
 
