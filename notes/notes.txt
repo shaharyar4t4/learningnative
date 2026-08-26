@@ -172,5 +172,11 @@ mention all point in code base ...
 
 Lecture 18 -- UnMounting in UseeffectHook
 
+UseeffectHook ko "UnMounting Process" me kese use karsaata ha..
 
+--> same hum useEffect hook bnta ha bs me return karta ha ik call hoga wo ase show hota ha 
+
+i.e:    return () => {
+            console.log('the child is unmounted');
+        }
 

@@ -1,6 +1,6 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
+// import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
 // import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
 // import UseEffectHook from './src/components/UseEffectHook'
 // import Clascompenent from './src/components/Classcomponent'
@@ -43,7 +43,8 @@ const App = () => {
       {/* <Clascompenent/> */}
       {/* <UseEffectHook/> */}
       {/* <UseEffectHookupdateface/> */}
-      <UseEffectHookUnmounting/>
+      {/* <UseEffectHookUnmounting/> */}
+
     </View>
 
 
