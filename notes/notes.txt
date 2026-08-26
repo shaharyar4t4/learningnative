@@ -180,3 +180,9 @@ i.e:    return () => {
             console.log('the child is unmounted');
         }
 
+==========================================================================================
+
+Lecture 19 -- Toggle (Show and Hide)
+
+make a proper component for show and Hide Container by using the Toggle logics
+
