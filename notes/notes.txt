@@ -186,3 +186,12 @@ Lecture 19 -- Toggle (Show and Hide)
 
 make a proper component for show and Hide Container by using the Toggle logics
 
+
+==========================================================================================
+
+Lecture 20 -- Button Style (Touchable Opacity and Touchable Higlight)
+
+Simple button me ap itni style nhi karsaata ho jitna is me possible ha Touchable or Touchable Highlight
+
+Touchable Opacity me Opacity aati or modren look aata ha 
+Touchable Highlight kiya liya background me colorr aata ha ..

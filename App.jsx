@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import ShowHideToggle from './src/components/ShowHideToggle'
+import StyleWithButton from './src/components/StyleWithButton'
+// import ShowHideToggle from './src/components/ShowHideToggle'
 // import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
 // import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
 // import UseEffectHook from './src/components/UseEffectHook'
@@ -45,7 +46,8 @@ const App = () => {
       {/* <UseEffectHook/> */}
       {/* <UseEffectHookupdateface/> */}
       {/* <UseEffectHookUnmounting/> */}
-      <ShowHideToggle/>
+      {/* <ShowHideToggle/> */}
+      <StyleWithButton/>
 
     </View>
 
