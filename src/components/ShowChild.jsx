@@ -8,6 +8,7 @@ const ShowChild = () => {
     // }, []);
 
     useEffect(() => {
+        // this is for unmounting the child component
         return () => {
             console.log('the child is unmounted');
         }
