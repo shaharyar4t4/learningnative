@@ -194,4 +194,10 @@ Lecture 20 -- Button Style (Touchable Opacity and Touchable Higlight)
 Simple button me ap itni style nhi karsaata ho jitna is me possible ha Touchable or Touchable Highlight
 
 Touchable Opacity me Opacity aati or modren look aata ha 
-Touchable Highlight kiya liya background me colorr aata ha ..
+Touchable Highlight kiya liya background me colorr aata ha ..'
+
+==========================================================================================
+
+Lecture 21 -- Loader
+
+Learning about the Active Loader and like how it work and apply the condition as well..
