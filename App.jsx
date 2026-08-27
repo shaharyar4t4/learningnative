@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import Loader from './src/components/Loader'
+import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
+// import Loader from './src/components/Loader'
 // import StyleWithButton from './src/components/StyleWithButton'
 // import ShowHideToggle from './src/components/ShowHideToggle'
 // import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
@@ -49,8 +50,8 @@ const App = () => {
       {/* <UseEffectHookUnmounting/> */}
       {/* <ShowHideToggle/> */}
       {/* <StyleWithButton/> */}
-      <Loader/>
-
+      {/* <Loader/> */}
+      <ViewLoginScreen/>
     </View>
 
 
