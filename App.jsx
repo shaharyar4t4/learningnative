@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
+import PressableComponents from './src/components/PressableComponents'
+// import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
 // import Loader from './src/components/Loader'
 // import StyleWithButton from './src/components/StyleWithButton'
 // import ShowHideToggle from './src/components/ShowHideToggle'
@@ -51,7 +52,8 @@ const App = () => {
       {/* <ShowHideToggle/> */}
       {/* <StyleWithButton/> */}
       {/* <Loader/> */}
-      <ViewLoginScreen/>
+      {/* <ViewLoginScreen/> */}
+      <PressableComponents/>
     </View>
 
 

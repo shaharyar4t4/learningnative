@@ -201,3 +201,13 @@ Touchable Highlight kiya liya background me colorr aata ha ..'
 Lecture 21 -- Loader
 
 Learning about the Active Loader and like how it work and apply the condition as well..
+
+==========================================================================================
+
+Lecture 22 -- pressable
+
+pressable allow multiple press opeaction (long press, simple press etc)
+
+ // onPress={handlePress}
+      // onPressIn={handlePressIn}
+      // onPressOut={handlePressOut}
