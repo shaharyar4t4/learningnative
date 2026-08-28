@@ -1,6 +1,8 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import PressableComponents from './src/components/PressableComponents'
+import StatusBar from './src/components/StatusBarExample'
+import StatusBarExample from './src/components/StatusBarExample';
+// import PressableComponents from './src/components/PressableComponents'
 // import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
 // import Loader from './src/components/Loader'
 // import StyleWithButton from './src/components/StyleWithButton'
@@ -53,7 +55,8 @@ const App = () => {
       {/* <StyleWithButton/> */}
       {/* <Loader/> */}
       {/* <ViewLoginScreen/> */}
-      <PressableComponents/>
+      {/* <PressableComponents/> */}
+      <StatusBarExample/>
     </View>
 
 

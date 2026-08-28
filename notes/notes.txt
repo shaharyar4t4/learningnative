@@ -211,3 +211,9 @@ pressable allow multiple press opeaction (long press, simple press etc)
  // onPress={handlePress}
       // onPressIn={handlePressIn}
       // onPressOut={handlePressOut}
+
+==========================================================================================
+
+Lecture 23 -- Status bar 
+
+the statusbar is show on top of the mobile app but recent update Edge to Edge this is not working..
