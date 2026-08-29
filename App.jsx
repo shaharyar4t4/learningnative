@@ -1,7 +1,8 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import StatusBar from './src/components/StatusBarExample'
-import StatusBarExample from './src/components/StatusBarExample';
+import UseRefHook from './src/components/UseRefHook'
+// import StatusBar from './src/components/StatusBarExample'
+// import StatusBarExample from './src/components/StatusBarExample';
 // import PressableComponents from './src/components/PressableComponents'
 // import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
 // import Loader from './src/components/Loader'
@@ -56,7 +57,8 @@ const App = () => {
       {/* <Loader/> */}
       {/* <ViewLoginScreen/> */}
       {/* <PressableComponents/> */}
-      <StatusBarExample/>
+      {/* <StatusBarExample/> */}
+      <UseRefHook/>
     </View>
 
 

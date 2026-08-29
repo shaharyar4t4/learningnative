@@ -217,3 +217,10 @@ pressable allow multiple press opeaction (long press, simple press etc)
 Lecture 23 -- Status bar 
 
 the statusbar is show on top of the mobile app but recent update Edge to Edge this is not working..
+
+==========================================================================================
+
+Lecture 24 -- UseRefHook
+
+they use specific for no need render components it will be direct target the components
+
