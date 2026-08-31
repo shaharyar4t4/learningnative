@@ -1,11 +1,11 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import ModelDailogy from './src/components/ModelDailogy'
+// import ModelDailogy from './src/components/ModelDailogy'
 // import UseRefHook from './src/components/UseRefHook'
 // import StatusBar from './src/components/StatusBarExample'
 // import StatusBarExample from './src/components/StatusBarExample';
 // import PressableComponents from './src/components/PressableComponents'
-// import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
+import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
 // import Loader from './src/components/Loader'
 // import StyleWithButton from './src/components/StyleWithButton'
 // import ShowHideToggle from './src/components/ShowHideToggle'
@@ -60,8 +60,8 @@ const App = () => {
       {/* <PressableComponents/> */}
       {/* <StatusBarExample/> */}
       {/* <UseRefHook/> */}
-      <ModelDailogy/>
-      
+      {/* <ModelDailogy/> */}
+      <ViewLoginScreen/>
     </View>
 
 
