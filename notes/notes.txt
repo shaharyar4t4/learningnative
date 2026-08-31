@@ -224,3 +224,17 @@ Lecture 24 -- UseRefHook
 
 they use specific for no need render components it will be direct target the components
 
+=========================================================================================
+
+Lecture 25 -- Modal Dailogy box
+
+how appear the Dailogy box in flutter in aleat box..
+we learn about the parmeter of modal look here:
+
+<Modal
+visible={modelVisible}
+animationType='fade'
+//  {/*basically it use background*/}
+transparent={true}
+>
+
