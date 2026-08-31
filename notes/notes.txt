@@ -243,3 +243,11 @@ transparent={true}
 Lecture 26 -- Aleat component
 
 how the aleat component is appears
+
+==================================================================
+
+Lecture - 27 about API
+
+Install the JSON server by using this link: https://www.npmjs.com/package/json-server
+
+create the api...
