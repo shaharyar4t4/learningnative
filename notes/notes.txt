@@ -238,3 +238,8 @@ animationType='fade'
 transparent={true}
 >
 
+=========================================================================================
+
+Lecture 26 -- Aleat component
+
+how the aleat component is appears
