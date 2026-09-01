@@ -261,3 +261,24 @@ learning about how i connect the api by using the get, post, put and Delete meth
 most 2 method is implement the for API fetching detial 
 1. fetch api <-- buildin hota mostly it use for old application this day is not using...
 2. Axios  <-- third party api
+
+// formate of Axio api call..
+useEffect(() => {
+        axios.get('http://192.168.1.8:3000/user').then((result) => {
+                console.log(result.data);
+                setData(result.data);
+            }).catch((error) => {
+                console.log('API Error:', error.message);
+            });
+    }, []);
+
+
+==================================================================
+
+Lecture - 29 Post APi
+
+learning about how i connect the api by using the get, post, put and Delete method
+
+
+
+

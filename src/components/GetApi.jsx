@@ -14,7 +14,7 @@ const GetApi = () => {
     //     // });
     //     // axios process -- in modern way to call api's
     useEffect(() => {
-        axios.get('http://192.168.18.14:3000/user').then((result) => {
+        axios.get('http://192.168.1.8:3000/user').then((result) => {
                 console.log(result.data);
                 setData(result.data);
             }).catch((error) => {
