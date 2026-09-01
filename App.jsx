@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import AleatExample from './src/components/AleatExample'
+import GetApi from './src/components/GetApi'
+// import AleatExample from './src/components/AleatExample'
 // import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
 // import ModelDailogy from './src/components/ModelDailogy'
 // import UseRefHook from './src/components/UseRefHook'
@@ -63,7 +64,8 @@ const App = () => {
       {/* <UseRefHook/> */}
       {/* <ModelDailogy/> */}
       {/* <ViewLoginScreen/> */}
-      <AleatExample/>
+      {/* <AleatExample/> */}
+      <GetApi/>
     </View>
 
 

@@ -251,3 +251,13 @@ Lecture - 27 about API
 Install the JSON server by using this link: https://www.npmjs.com/package/json-server
 
 create the api...
+
+==================================================================
+
+Lecture - 28 Get APi 
+
+learning about how i connect the api by using the get, post, put and Delete method
+
+most 2 method is implement the for API fetching detial 
+1. fetch api <-- buildin hota mostly it use for old application this day is not using...
+2. Axios  <-- third party api

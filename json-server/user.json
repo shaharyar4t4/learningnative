@@ -1,0 +1,29 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "Hassan Ali",
+            "email": "hassanali209@gmail.com"
+        },
+        {
+            "id": 2,
+            "name": "Fahad Ali",
+            "email": "fahadali209@gmail.com"
+        },
+        {
+            "id": 3,
+            "name": "Haider Ali",
+            "email": "haiderali209@gmail.com"
+        },
+        {
+            "id": 4,
+            "name": "Ali",
+            "email": "ali209@gmail.com"
+        },
+        {
+            "id": 5,
+            "name": "Ahmead Ali",
+            "email": "Ahmedali@gmail.com"
+        }
+    ]
+}
