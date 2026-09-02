@@ -300,6 +300,32 @@ same query raha gi bs.. humme parmeter call karna hoga..
             }); // formData is sent data (update) ---> main DB
 
 
+==================================================================
+
+Lecture - 31 Patch api
+
+learning about how i connect the api by using the get, post, put and Delete method
+
+By Using the Axios --> Patch
+
+    const handleSubmit = async () => {
+        try {
+            const respone = await axios.patch(`http://192.168.1.8:3000/user/${formData.id}`,
+                {
+                    // phela tu hum na form ko separte kiyaha phir new name ki value ko update kardi field me and same for email..
+                    ...formData.name && { name: formData.name },
+                    ...formData.email && { email: formData.email },
+                });
+            Alert.alert('sucess', 'Data Updated Sucessfully');
+            console.log(respone.data);
+            // after submission of data the will be reset fields.
+            setformData({ id: '', name: '', email: '' });
+        } catch (e) {
+            Alert.alert('Error', 'Submission Failed');
+        }
+    };
+
+
 
 
 

@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import PutApi from './src/components/PutApi'
+import PatchApi from './src/components/PatchApi'
+// import PutApi from './src/components/PutApi'
 // import PostApi from './src/components/PostApi'
 // import GetApi from './src/components/GetApi'
 // import AleatExample from './src/components/AleatExample'
@@ -69,7 +70,8 @@ const App = () => {
       {/* <AleatExample/> */}
       {/* <GetApi/> */}
       {/* <PostApi/> */}
-      <PutApi />
+      {/* <PutApi /> */}
+      <PatchApi/>
     </View>
 
 
