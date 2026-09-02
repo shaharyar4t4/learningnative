@@ -30,7 +30,7 @@ const PostApi = () => {
   return (
     <View>
       <Text style={styles.txt}>Resigtion Form</Text>
-      <TextInput
+      <TextInput 
         style={styles.txtfield}
         placeholder='Enter ID'
         placeholderTextColor='#000'
@@ -46,7 +46,6 @@ const PostApi = () => {
         // this fromData is bending from field
         value={formData.name}
         // "value" is show the submission value 
-
         onChangeText={(value) => handleInput('name', value)}
       />
       <TextInput

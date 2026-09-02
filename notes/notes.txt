@@ -279,11 +279,26 @@ Lecture - 29 Post APi
 
 learning about how i connect the api by using the get, post, put and Delete method
 
-By Using the Axios
+By Using the Axios --> Post
 
 ->> handling the feild
 -->> integrated the Asyn and Await
 --> learning about separate opeators..
+
+==================================================================
+
+Lecture - 30 PUT api
+
+learning about how i connect the api by using the get, post, put and Delete method
+
+By Using the Axios --> Put 
+
+same query raha gi bs.. humme parmeter call karna hoga.. 
+ const response = await axios.put(`http://192.168.18.14:3000/user/${formData.id}`, {
+                name: formData.name,
+                email: formData.email,
+            }); // formData is sent data (update) ---> main DB
+
 
 
 

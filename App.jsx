@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import PostApi from './src/components/PostApi'
+import PutApi from './src/components/PutApi'
+// import PostApi from './src/components/PostApi'
 // import GetApi from './src/components/GetApi'
 // import AleatExample from './src/components/AleatExample'
 // import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
@@ -67,7 +68,8 @@ const App = () => {
       {/* <ViewLoginScreen/> */}
       {/* <AleatExample/> */}
       {/* <GetApi/> */}
-      <PostApi/>
+      {/* <PostApi/> */}
+      <PutApi />
     </View>
 
 
