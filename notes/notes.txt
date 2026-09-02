@@ -279,6 +279,13 @@ Lecture - 29 Post APi
 
 learning about how i connect the api by using the get, post, put and Delete method
 
+By Using the Axios
+
+->> handling the feild
+-->> integrated the Asyn and Await
+--> learning about separate opeators..
+
+
 
 
 

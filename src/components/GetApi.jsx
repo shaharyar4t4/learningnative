@@ -14,12 +14,12 @@ const GetApi = () => {
     //     // });
     //     // axios process -- in modern way to call api's
     useEffect(() => {
-        axios.get('http://192.168.1.8:3000/user').then((result) => {
-                console.log(result.data);
-                setData(result.data);
-            }).catch((error) => {
-                console.log('API Error:', error.message);
-            });
+        axios.get('http://192.168.18.14:3000/user').then((result) => {
+            console.log(result.data);
+            setData(result.data);
+        }).catch((error) => {
+            console.log('API Error:', error.message);
+        });
     }, []);
 
     return (
@@ -27,14 +27,14 @@ const GetApi = () => {
             <Text style={{ fontSize: 20, marginBottom: 10 }}>Get ApI Method</Text>
 
             {
-            data.map((item) => (
-                <Text
-                    key={item.id}
-                    style={{ fontSize: 15, marginBottom: 10 }}
-                >
-                    {item.name}
-                </Text>
-            ))
+                data.map((item) => (
+                    <Text
+                        key={item.id}
+                        style={{ fontSize: 15, marginBottom: 10 }}
+                    >
+                        {item.name}
+                    </Text>
+                ))
             }
         </View>
     )
