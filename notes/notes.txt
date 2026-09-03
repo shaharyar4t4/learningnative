@@ -326,6 +326,28 @@ By Using the Axios --> Patch
     };
 
 
+==================================================================
+
+Lecture - 32 Delete api
+
+learning about how i connect the api by using the get, post, put and Delete method
+
+By Using the Axios --> Delete
+
+    // delete fecture..
+    const handleSubmit = async () => {
+        try {
+            const response = await axios.delete(`http://192.168.1.8:3000/user/${id}`);
+
+            Alert.alert('Sucess', 'Removed Sucessfully');
+            console.log(response.data);
+        } catch (e) {
+            Alert.alert('Failed', 'Something went wrong');
+        }
+
+    };
+
+
 
 
 
