@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import DeleteApi from './src/components/DeleteApi'
+import GetApiList from './src/components/GetApiList'
+// import DeleteApi from './src/components/DeleteApi'
 // import PatchApi from './src/components/PatchApi'
 // import PutApi from './src/components/PutApi'
 // import PostApi from './src/components/PostApi'
@@ -73,7 +74,8 @@ const App = () => {
       {/* <PostApi/> */}
       {/* <PutApi /> */}
       {/* <PatchApi/> */}
-      <DeleteApi/>
+      {/* <DeleteApi/> */}
+      <GetApiList/>
     </View>
 
 

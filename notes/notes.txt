@@ -347,7 +347,20 @@ By Using the Axios --> Delete
 
     };
 
+==================================================================
 
+Lecture - 33 Fetch the data in the form of List by using FlatList --- (Get API)
+
+Learning about how to fetch the data in the form of list..
+
+    useEffect(() => {
+        axios.get('http://192.168.1.8:3000/user').then((respone) => {
+            setmyData(respone.data);
+            console.log(respone.data);
+        })
+    }, []);
+
+and also used the Flate list component
 
 
 
