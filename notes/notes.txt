@@ -363,5 +363,27 @@ Learning about how to fetch the data in the form of list..
 and also used the Flate list component
 
 
+==================================================================
+
+
+Lecture - 34 platfrom specific code (IOS and android)
+
+learning about the Select and OS both are for Platefrom specific code..
+
+// selector code 
+  Platform.select({
+                        // target mutliple plateform ...
+                        ios: 'Your device is IOS',
+                        android: 'your device is android',
+                        macos: 'your device is macos'
+
+  })
+
+  // OS specific
+  {
+                // the text show on the base of platefrom..
+    Platform.OS === 'ios' ? 'Welcome IOS user!' : 'Welcome Android user!'
+  }
+
 
 
