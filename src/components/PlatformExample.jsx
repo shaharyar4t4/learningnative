@@ -18,7 +18,6 @@ const PlatformExample = () => {
                         macos: 'your device is macos'
 
                     })
-
                 }
             </Text>
         </View>
@@ -37,6 +36,7 @@ const styles = StyleSheet.create({
             ios: 'lightblue',
             android: 'lightgreen',
         }),
+        borderRadius: 20,
     },
     welcomeText: {
         fontSize: 24,
