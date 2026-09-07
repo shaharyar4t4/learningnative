@@ -404,3 +404,53 @@ Lecture - 35 Serach Bar fecture
     </View>
   );
 
+
+==================================================================
+
+Lecture - 36 Stack Navigation
+
+three type of navigator
+1. stack Navigation -> screen by screen
+2. Drawer Navigation -> Menu Section
+3. Tab Navigation --> Bottom Navigation
+
+some step follow -- stack Navigation
+
+Run Cmd
+1. npm install @react-navigation/native
+2. npm install react-native-screens react-native-safe-area-context
+
+3. add the code in MainActivity.kt 
+
+ override fun onCreate(savedInstanceState: Bundle?) {
+    supportFragmentManager.fragmentFactory = RNScreensFragmentFactory()
+    super.onCreate(savedInstanceState)
+  }
+
+4. npm install @react-navigation/native-stack
+
+simple code for call the stack navigation
+      <NavigationContainer>
+        {/*Prefrom the stack navigation*/}
+        <Stack.Navigator>
+          <Stack.Screen 
+          // name of screen..
+          name='Home' 
+          // mention the path of screen
+          component={HomeScreen}
+          // not show the header 
+          options={{headerShown: false}}
+          
+          />
+
+          <Stack.Screen 
+          // name of screen..
+          name='About' 
+          // mention the path of screen
+          component={AboutusScreen}
+          
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+
+

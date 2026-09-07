@@ -1,99 +1,139 @@
-import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
+// import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
+// import React from 'react'
+// // import SearchBar from './src/components/SearchBar'
+// // import PlatformExample from './src/components/PlatformExample'
+// // import GetApiList from './src/components/GetApiList'
+// // import DeleteApi from './src/components/DeleteApi'
+// // import PatchApi from './src/components/PatchApi'
+// // import PutApi from './src/components/PutApi'
+// // import PostApi from './src/components/PostApi'
+// // import GetApi from './src/components/GetApi'
+// // import AleatExample from './src/components/AleatExample'
+// // import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
+// // import ModelDailogy from './src/components/ModelDailogy'
+// // import UseRefHook from './src/components/UseRefHook'
+// // import StatusBar from './src/components/StatusBarExample'
+// // import StatusBarExample from './src/components/StatusBarExample';
+// // import PressableComponents from './src/components/PressableComponents'
+// // import Loader from './src/components/Loader'
+// // import StyleWithButton from './src/components/StyleWithButton'
+// // import ShowHideToggle from './src/components/ShowHideToggle'
+// // import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
+// // import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
+// // import UseEffectHook from './src/components/UseEffectHook'
+// // import Clascompenent from './src/components/Classcomponent'
+// // import Gridview from './src/components/Gridview'
+// // import ContactListScreen from './src/screen/contact/ContactListScreen'
+// // import Loginform from './src/components/Loginform'
+// // import FlatListexample  from './src/components/FlatListexample'
+// // import Props from './src/components/Props'
+// // import Buttonlearn from './src/components/Buttonlearn'
+// // import UseStateHook from './src/components/UseStateHook'
+// // import InputText from './src/components/InputText'
+// // import { SafeAreaProvider } from 'react-native-safe-area-context'
+// // import Loginscreen from './src/components/Loginscreen'
+// // import Styling from './src/components/Styling'
+// // import Firstcomp from './src/components/Firstcomp'
+// // import LearnJsx  from './src/components/LearnJsx'
+// // import SectionListexample from './src/components/SectionListexample'
+
+// const App = () => {
+//   return (
+//     <View style={styles.container}>
+//       {/* <Text>My name is Shaharyar Ali</Text>
+//             <Text>As a Mobile Application developer</Text>
+//             <Button title='Continue' />
+//             <Firstcomp />
+//             <LearnJsx/> */}
+//       {/* <Buttonlearn/> */}
+//       {/* <UseStateHook/> */}
+//       {/* <Props /> */}
+
+//       {/* <InputText /> */}
+//       {/* <Styling /> */}
+//       {/* <Loginform/> */}
+//       {/* <FlatListexample/> */}
+//       {/* <SectionListexample /> */}
+
+//       {/* <Loginscreen /> */}
+//       {/* <ContactListScreen/> */}
+//       {/* <Gridview /> */}
+//       {/* <Clascompenent/> */}
+//       {/* <UseEffectHook/> */}
+//       {/* <UseEffectHookupdateface/> */}
+//       {/* <UseEffectHookUnmounting/> */}
+//       {/* <ShowHideToggle/> */}
+//       {/* <StyleWithButton/> */}
+//       {/* <Loader/> */}
+//       {/* <ViewLoginScreen/> */}
+//       {/* <PressableComponents/> */}
+//       {/* <StatusBarExample/> */}
+//       {/* <UseRefHook/> */}
+//       {/* <ModelDailogy/> */}
+//       {/* <ViewLoginScreen/> */}
+//       {/* <AleatExample/> */}
+//       {/* <GetApi/> */}
+//       {/* <PostApi/> */}
+//       {/* <PutApi /> */}
+//       {/* <PatchApi/> */}
+//       {/* <DeleteApi/> */}
+//       {/* <GetApiList/> */}
+//       {/* <PlatformExample/> */}
+//       {/* <SearchBar/> */}
+
+//     </View>
+
+
+//   )
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     padding: 15,
+//     flex: 1,
+//     backgroundColor: '#f0f0f0',
+
+//   },
+// });
+// export default App;
+
+import { View, Text } from 'react-native'
 import React from 'react'
-import SearchBar from './src/components/SearchBar'
-// import PlatformExample from './src/components/PlatformExample'
-// import GetApiList from './src/components/GetApiList'
-// import DeleteApi from './src/components/DeleteApi'
-// import PatchApi from './src/components/PatchApi'
-// import PutApi from './src/components/PutApi'
-// import PostApi from './src/components/PostApi'
-// import GetApi from './src/components/GetApi'
-// import AleatExample from './src/components/AleatExample'
-// import ViewLoginScreen from './src/screen/login/ViewLoginScreen'
-// import ModelDailogy from './src/components/ModelDailogy'
-// import UseRefHook from './src/components/UseRefHook'
-// import StatusBar from './src/components/StatusBarExample'
-// import StatusBarExample from './src/components/StatusBarExample';
-// import PressableComponents from './src/components/PressableComponents'
-// import Loader from './src/components/Loader'
-// import StyleWithButton from './src/components/StyleWithButton'
-// import ShowHideToggle from './src/components/ShowHideToggle'
-// import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting'
-// import UseEffectHookupdateface from './src/components/UseEffectHookupdateface'
-// import UseEffectHook from './src/components/UseEffectHook'
-// import Clascompenent from './src/components/Classcomponent'
-// import Gridview from './src/components/Gridview'
-// import ContactListScreen from './src/screen/contact/ContactListScreen'
-// import Loginform from './src/components/Loginform'
-// import FlatListexample  from './src/components/FlatListexample'
-// import Props from './src/components/Props'
-// import Buttonlearn from './src/components/Buttonlearn'
-// import UseStateHook from './src/components/UseStateHook'
-// import InputText from './src/components/InputText'
-// import { SafeAreaProvider } from 'react-native-safe-area-context'
-// import Loginscreen from './src/components/Loginscreen'
-// import Styling from './src/components/Styling'
-// import Firstcomp from './src/components/Firstcomp'
-// import LearnJsx  from './src/components/LearnJsx'
-// import SectionListexample from './src/components/SectionListexample'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/navigation/HomeScreen'
+import AboutusScreen from './src/navigation/AboutusScreen'
+
+// this is important for implementation of stack navigation..
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      {/* <Text>My name is Shaharyar Ali</Text>
-            <Text>As a Mobile Application developer</Text>
-            <Button title='Continue' />
-            <Firstcomp />
-            <LearnJsx/> */}
-      {/* <Buttonlearn/> */}
-      {/* <UseStateHook/> */}
-      {/* <Props /> */}
+    
+      <NavigationContainer>
+        {/*Prefrom the stack navigation*/}
+        <Stack.Navigator>
+          <Stack.Screen 
+          // name of screen..
+          name='Home' 
+          // mention the path of screen
+          component={HomeScreen}
+          // not show the header 
+          options={{headerShown: false}}
+          
+          />
 
-      {/* <InputText /> */}
-      {/* <Styling /> */}
-      {/* <Loginform/> */}
-      {/* <FlatListexample/> */}
-      {/* <SectionListexample /> */}
-
-      {/* <Loginscreen /> */}
-      {/* <ContactListScreen/> */}
-      {/* <Gridview /> */}
-      {/* <Clascompenent/> */}
-      {/* <UseEffectHook/> */}
-      {/* <UseEffectHookupdateface/> */}
-      {/* <UseEffectHookUnmounting/> */}
-      {/* <ShowHideToggle/> */}
-      {/* <StyleWithButton/> */}
-      {/* <Loader/> */}
-      {/* <ViewLoginScreen/> */}
-      {/* <PressableComponents/> */}
-      {/* <StatusBarExample/> */}
-      {/* <UseRefHook/> */}
-      {/* <ModelDailogy/> */}
-      {/* <ViewLoginScreen/> */}
-      {/* <AleatExample/> */}
-      {/* <GetApi/> */}
-      {/* <PostApi/> */}
-      {/* <PutApi /> */}
-      {/* <PatchApi/> */}
-      {/* <DeleteApi/> */}
-      {/* <GetApiList/> */}
-      {/* <PlatformExample/> */}
-      <SearchBar/>
-
-    </View>
-
-
+          <Stack.Screen 
+          // name of screen..
+          name='About' 
+          // mention the path of screen
+          component={AboutusScreen}
+          
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 15,
-    flex: 1,
-    backgroundColor: '#f0f0f0',
-
-  },
-});
 export default App;
-
