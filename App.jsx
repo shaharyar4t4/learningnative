@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 import React from 'react'
-import PlatformExample from './src/components/PlatformExample'
+import SearchBar from './src/components/SearchBar'
+// import PlatformExample from './src/components/PlatformExample'
 // import GetApiList from './src/components/GetApiList'
 // import DeleteApi from './src/components/DeleteApi'
 // import PatchApi from './src/components/PatchApi'
@@ -77,8 +78,8 @@ const App = () => {
       {/* <PatchApi/> */}
       {/* <DeleteApi/> */}
       {/* <GetApiList/> */}
-
-      <PlatformExample/>
+      {/* <PlatformExample/> */}
+      <SearchBar/>
 
     </View>
 

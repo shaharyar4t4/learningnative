@@ -385,5 +385,22 @@ learning about the Select and OS both are for Platefrom specific code..
     Platform.OS === 'ios' ? 'Welcome IOS user!' : 'Welcome Android user!'
   }
 
+==================================================================
 
+
+Lecture - 35 Serach Bar fecture
+
+--> Leaning about how to create the Serach fetcher
+
+    // main logo of Serach component
+  const filteredContacts = contants.filter(contact =>  
+    // or jo ap kiya DB me data wehe show karya ga..
+    contact.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  // render the actucall data..
+  const renderItem = ({ item }) => (
+    <View style={styles.contactItem}>
+      <Text style={styles.contactName}>{item.name}</Text>
+    </View>
+  );
 
