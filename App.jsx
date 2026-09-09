@@ -97,7 +97,7 @@
 // });
 // export default App;
 
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -113,13 +113,35 @@ const App = () => {
 
     <NavigationContainer>
       {/*Prefrom the stack navigation*/}
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: Styles.header,
+          headerTitleStyle: Styles.headerTitle,
+          headerTintColor: '#fff',
+          // app on screens.
+          contentStyle: Styles.screenStyle
+        }}
+      >
 
         <Stack.Screen
           // name of screen.. 
           name='login'
           // mention the path of Screen
           component={LoginScreen}
+          // ye option use hota jab humme apna header ko same rakhana hota ha complete application..
+          // when you multiple position for this code...
+          options={{
+            title: 'Welcome to over Application',
+            // mostly ye recommands color ap ye call karvo
+            headerTintColor: 'red',
+            headerTitleStyle:{
+              fontSize: 20, 
+              color: 'yellow'
+            },
+            headerStyle:{
+              backgroundColor: 'red',
+            },
+          }}
 
         />
 
@@ -149,3 +171,18 @@ const App = () => {
 }
 
 export default App;
+
+const Styles = StyleSheet.create({
+     header:{
+      backgroundColor: '#6200EE',
+
+     },
+     headerTitle:{
+      fontWeight: 'bold',
+      fontSize: 26,
+     },
+     screenStyle:{
+      backgroundColor: 'lightgreen'
+     }
+
+});
