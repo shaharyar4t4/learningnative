@@ -103,36 +103,48 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/navigation/HomeScreen'
 import AboutusScreen from './src/navigation/AboutusScreen'
+import LoginScreen from './src/navigation/LoginScreen'
 
 // this is important for implementation of stack navigation..
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    
-      <NavigationContainer>
-        {/*Prefrom the stack navigation*/}
-        <Stack.Navigator>
-          <Stack.Screen 
+
+    <NavigationContainer>
+      {/*Prefrom the stack navigation*/}
+      <Stack.Navigator>
+
+        <Stack.Screen
+          // name of screen.. 
+          name='login'
+          // mention the path of Screen
+          component={LoginScreen}
+
+        />
+
+        <Stack.Screen
           // name of screen..
-          name='Home' 
+          name='Home'
           // mention the path of screen
           component={HomeScreen}
-          // not show the header 
-          options={{headerShown: false}}
-          
-          />
+        // not show the header 
+        // options={{headerShown: false}}
 
-          <Stack.Screen 
+        />
+
+        <Stack.Screen
           // name of screen..
-          name='About' 
+          name='About'
           // mention the path of screen
           component={AboutusScreen}
-          
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    
+
+        />
+
+
+      </Stack.Navigator>
+    </NavigationContainer>
+
   )
 }
 

@@ -453,4 +453,14 @@ simple code for call the stack navigation
         </Stack.Navigator>
       </NavigationContainer>
 
+==================================================================
 
+Lecture -37 stack navigation (sent data from one screen to another screen.)
+
+learning about the how props transfer the data from one screen
+
+// "sent" the username for tranfer text for anyother screen..
+onPress={()=> navigation.navigate('About', {username: userName})}
+
+// "Get" the data from another images...
+const {username} = props.route.params;
