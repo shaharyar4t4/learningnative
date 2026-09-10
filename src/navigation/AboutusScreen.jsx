@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
 
 const AboutusScreen = (props) => {
@@ -7,8 +7,17 @@ const AboutusScreen = (props) => {
   const {username} = props.route.params;  // is ka ander username ka props ha ..
   return (
     <View>
-      <Text>Your userName is: {username}</Text>
+      <Text style={Styles.mainContainer}>Your userName is: {username}</Text>
+      <Button 
+      title='Go to back'
+      onPress={() => props.navigation.goBack()}
+      />
     </View>
   )
 }
+const Styles = StyleSheet.create({
+  mainContainer:{
+    margin: 20,
+  }
+})
 export default AboutusScreen;

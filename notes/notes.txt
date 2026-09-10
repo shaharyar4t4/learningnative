@@ -512,5 +512,41 @@ const Styles = StyleSheet.create({
 });
 
 
+==================================================================
+
+Lecture - 39 component rendering with stack navigator..
+
+Learning about the rendering navigation form another navigation...
+
+example code 
 
 
+ options={{
+            title: 'Header',
+            // headerTitle: () => <Button title='One' color='red' />,
+            // headerRight: () => <Button title='One' color='green' />
+            // call the references values...
+            headerTitle: HeaderTitle, // references --> mention in below
+            headerRight: HeaderRight,
+          }}
+
+
+// show alert function for globally call..
+const sayHello = () => {
+  Alert.alert('Hello', 'Hello User', [], {cancelable: true});
+};
+
+// this reference for globally call..
+// but is code par muhja shak ha ...
+const HeaderTitle = () => {
+  const navigation = useNavigation();
+
+  return (
+    <Button
+      title='One'
+      color='red'
+      onPress={() => navigation.navigate('Example')}
+    />
+  );
+};
+const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;

@@ -97,16 +97,38 @@
 // });
 // export default App;
 
-import { View, Text, StyleSheet } from 'react-native'
+import { StyleSheet, Button, Alert } from 'react-native'
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/navigation/HomeScreen'
 import AboutusScreen from './src/navigation/AboutusScreen'
 import LoginScreen from './src/navigation/LoginScreen'
+import MyHeader from './src/components/MyHeader'
+import Example from './src/components/Example'
 
 // this is important for implementation of stack navigation..
 const Stack = createNativeStackNavigator();
+
+// show alert function for globally call..
+const sayHello = () => {
+  Alert.alert('Hello', 'Hello User', [], {cancelable: true});
+};
+
+// this reference for globally call..
+// but is code par muhja shak ha ...
+const HeaderTitle = () => {
+  const navigation = useNavigation();
+
+  return (
+    <Button
+      title='One'
+      color='red'
+      onPress={() => navigation.navigate('Example')}
+    />
+  );
+};
+const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;
 
 const App = () => {
   return (
@@ -122,7 +144,22 @@ const App = () => {
           contentStyle: Styles.screenStyle
         }}
       >
+        <Stack.Screen
+          // name of screen.. 
+          name='Header'
+          // mention the path of Screen
+          component={MyHeader}
+          // apply the CSS in Specific components
+          options={{
+            title: 'Header',
+            // headerTitle: () => <Button title='One' color='red' />,
+            // headerRight: () => <Button title='One' color='green' />
+            // call the references values...
+            headerTitle: HeaderTitle,
+            headerRight: HeaderRight,
+          }}
 
+        />
         <Stack.Screen
           // name of screen.. 
           name='login'
@@ -134,11 +171,11 @@ const App = () => {
             title: 'Welcome to over Application',
             // mostly ye recommands color ap ye call karvo
             headerTintColor: 'red',
-            headerTitleStyle:{
-              fontSize: 20, 
+            headerTitleStyle: {
+              fontSize: 20,
               color: 'yellow'
             },
-            headerStyle:{
+            headerStyle: {
               backgroundColor: 'red',
             },
           }}
@@ -160,7 +197,15 @@ const App = () => {
           name='About'
           // mention the path of screen
           component={AboutusScreen}
+          options={{
+            headerShown: false,
+          }}
 
+          />
+
+        <Stack.Screen
+          name='Example'
+          component={Example}
         />
 
 
@@ -173,16 +218,16 @@ const App = () => {
 export default App;
 
 const Styles = StyleSheet.create({
-     header:{
-      backgroundColor: '#6200EE',
+  header: {
+    backgroundColor: '#6200EE',
 
-     },
-     headerTitle:{
-      fontWeight: 'bold',
-      fontSize: 26,
-     },
-     screenStyle:{
-      backgroundColor: 'lightgreen'
-     }
+  },
+  headerTitle: {
+    fontWeight: 'bold',
+    fontSize: 26,
+  },
+  screenStyle: {
+    backgroundColor: 'lightgreen'
+  }
 
 });
