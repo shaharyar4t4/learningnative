@@ -115,20 +115,23 @@ const sayHello = () => {
   Alert.alert('Hello', 'Hello User', [], {cancelable: true});
 };
 
-// this reference for globally call..
-// but is code par muhja shak ha ...
-const HeaderTitle = () => {
-  const navigation = useNavigation();
+// this reference for globally call.. this code specfic use for navigation.
+// const HeaderTitle = () => {
+//   const navigation = useNavigation();
 
-  return (
-    <Button
-      title='One'
-      color='red'
-      onPress={() => navigation.navigate('Example')}
-    />
-  );
-};
+//   return (
+//     <Button
+//       title='One'
+//       color='red'
+//       onPress={() => navigation.navigate('Example')}
+//     />
+//   );
+// };
+
+// const HeaderTitle = () => <Button title='One' color='red'/>;
 const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;
+// this line show the show th companent on header.
+const MyExample = () => <Example/>;
 
 const App = () => {
   return (
@@ -155,7 +158,8 @@ const App = () => {
             // headerTitle: () => <Button title='One' color='red' />,
             // headerRight: () => <Button title='One' color='green' />
             // call the references values...
-            headerTitle: HeaderTitle,
+            // headerTitle: HeaderTitle,
+            headerTitle: MyExample,
             headerRight: HeaderRight,
           }}
 
