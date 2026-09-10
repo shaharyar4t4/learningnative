@@ -464,3 +464,53 @@ onPress={()=> navigation.navigate('About', {username: userName})}
 
 // "Get" the data from another images...
 const {username} = props.route.params;
+
+==================================================================
+
+Lecture - 38 (implement the CSS in globally ways)
+
+learning about implement the CSS in globally ways, there is two ways for implement the CSS in header
+
+// implement the CSS on specific screen ...
+
+options={{
+            title: 'Welcome to over Application',
+            // mostly ye recommands color ap ye call karvo
+            headerTintColor: 'red',
+            headerTitleStyle:{
+              fontSize: 20, 
+              color: 'yellow'
+            },
+            headerStyle:{
+              backgroundColor: 'red',
+            },
+        }}
+
+// implement the Css on globally screen..
+
+    screenOptions={{
+          headerStyle: Styles.header,
+          headerTitleStyle: Styles.headerTitle,
+          headerTintColor: '#fff',
+          // app on screens.
+          contentStyle: Styles.screenStyle
+    }}
+
+
+const Styles = StyleSheet.create({
+     header:{
+      backgroundColor: '#6200EE',
+     },
+     headerTitle:{
+      fontWeight: 'bold',
+      fontSize: 26,
+     },
+     screenStyle:{
+      backgroundColor: 'lightgreen'
+     }
+
+});
+
+
+
+
