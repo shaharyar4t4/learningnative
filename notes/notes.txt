@@ -604,4 +604,84 @@ cmd
 1. npm i react-native-vector-icons
 
 and also add the line on build gradle files 
+
 here is line: apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+
+      <Tab.Navigator
+       screenOptions={
+        //it allocated the which is rendering currently..
+        ({ route }) =>({
+          tabBarIcon:({focused, color, size}) => getTabBarIcon(
+            route.name, // route name means ye abhi home ha ye profile screen par ha..
+            focused, // target screen
+            color, // allocated color
+            size // size of icon
+          ),
+
+          tabBarActiveTintColor: '#007bff',
+          tabBarInactiveTintColor: 'grey',
+          tabBarStyle:{
+            paddingBottom: 5,
+            height: 60,
+          }
+        })
+       }>
+        <Tab.Screen name= 'Home' component={HomeViewScreen}/>
+        <Tab.Screen name= 'Setting' component={SettingViewScreen}/>
+        <Tab.Screen name= 'Profile' component={ProfileViewScreen}/>
+
+      </Tab.Navigator>
+
+implement the icons logics
+
+const getTabBarIcon = (routeName, focused, color, size) => {
+  let iconName;
+  if(routeName === 'Home'){
+    iconName = focused ? 'home': 'home-outline';
+  } else if(routeName === 'Profile'){
+    iconName = focused ? 'home' : 'home-outline';
+  } else if(routeName === 'Setting'){
+    iconName = focused ? 'settings' : 'settings-outline';
+  }
+return <Icon name={iconName} size ={size} color={color}/>
+};
+
+==================================================================
+
+Lecture - 42 Top tab bar navigation..
+
+cmd 
+
+1. npm install @react-navigation/material-top-tabs
+2. npm install react-native-pager-view
+
+example code 
+      <Tab.Navigator
+        screenOptions={{
+          tabBarActiveTintColor: '#007BFF',
+          tabBarInactiveTintColor: 'grey',
+          tabBarStyle: {
+            backgroundColor: '#fff'
+          },
+
+          tabBarIndicatorStyle: {
+            backgroundColor: '#007BFF',
+            height: 3
+          },
+
+          tabBarLabelStyle: { fontSize: 16},
+
+        }}
+      >
+        <Tab.Screen name='Chats' component={ChatsScreen} />
+        <Tab.Screen name='Status' component={StatusScreen} />
+        <Tab.Screen name='Calls' component={CallScreen} />
+
+      </Tab.Navigator>
+
+
+==================================================================
+
+Lecture - 43 Ayns Storages
+
+cmd 

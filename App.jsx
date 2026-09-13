@@ -286,54 +286,95 @@
 // export default App;
 
 // implement the bottom tab navigation..
+// import { View, Text } from 'react-native'
+// import React from 'react'
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import HomeViewScreen from './src/bottomtab/HomeViewScreen'
+// import SettingViewScreen from './src/bottomtab/SettingViewScreen'
+// import ProfileViewScreen from './src/bottomtab/SettingViewScreen'
+// import Icon from 'react-native-vector-icons/Ionicons'
+
+// const Tab = createBottomTabNavigator();
+
+// const getTabBarIcon = (routeName, focused, color, size) => {
+//   let iconName;
+//   if(routeName === 'Home'){
+//     iconName = focused ? 'home': 'home-outline';
+//   } else if(routeName === 'Profile'){
+//     iconName = focused ? 'home' : 'home-outline';
+//   } else if(routeName === 'Setting'){
+//     iconName = focused ? 'settings' : 'settings-outline';
+//   }
+// return <Icon name={iconName} size ={size} color={color}/>
+// };
+
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator
+//        screenOptions={
+//         //it allocated the which is rendering currently..
+//         ({ route }) =>({
+//           tabBarIcon:({focused, color, size}) => getTabBarIcon(
+//             route.name, // route name means ye abhi home ha ye profile screen par ha..
+//             focused, // target screen
+//             color, // allocated color
+//             size // size of icon
+//           ),
+
+//           tabBarActiveTintColor: '#007bff',
+//           tabBarInactiveTintColor: 'grey',
+//           tabBarStyle:{
+//             paddingBottom: 5,
+//             height: 60,
+//           }
+//         })
+//        }>
+//         <Tab.Screen name= 'Home' component={HomeViewScreen}/>
+//         <Tab.Screen name= 'Setting' component={SettingViewScreen}/>
+//         <Tab.Screen name= 'Profile' component={ProfileViewScreen}/>
+
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   )
+// }
+
+// export default App;
+
+
 import { View, Text } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeViewScreen from './src/bottomtab/HomeViewScreen'
-import SettingViewScreen from './src/bottomtab/SettingViewScreen'
-import ProfileViewScreen from './src/bottomtab/SettingViewScreen'
-import Icon from 'react-native-vector-icons/Ionicons'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import CallScreen from './src/topbarnavigation/CallScreen';
+import ChatsScreen from './src/topbarnavigation/ChatsScreen';
+import StatusScreen from './src/topbarnavigation/StatusScreen';
 
-const Tab = createBottomTabNavigator();
-
-const getTabBarIcon = (routeName, focused, color, size) => {
-  let iconName;
-  if(routeName === 'Home'){
-    iconName = focused ? 'home': 'home-outline';
-  } else if(routeName === 'Profile'){
-    iconName = focused ? 'home' : 'home-outline';
-  } else if(routeName === 'Setting'){
-    iconName = focused ? 'settings' : 'settings-outline';
-  }
-return <Icon name={iconName} size ={size} color={color}/>
-};
-
+const Tab = createMaterialTopTabNavigator();
 const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
-       screenOptions={
-        //it allocated the which is rendering currently..
-        ({ route }) =>({
-          tabBarIcon:({focused, color, size}) => getTabBarIcon(
-            route.name, // route name means ye abhi home ha ye profile screen par ha..
-            focused, // target screen
-            color, // allocated color
-            size // size of icon
-          ),
-
-          tabBarActiveTintColor: '#007bff',
+        screenOptions={{
+          tabBarActiveTintColor: '#007BFF',
           tabBarInactiveTintColor: 'grey',
-          tabBarStyle:{
-            paddingBottom: 5,
-            height: 60,
-          }
-        })
-       }>
-        <Tab.Screen name= 'Home' component={HomeViewScreen}/>
-        <Tab.Screen name= 'Setting' component={SettingViewScreen}/>
-        <Tab.Screen name= 'Profile' component={ProfileViewScreen}/>
+          tabBarStyle: {
+            backgroundColor: '#fff'
+          },
+
+          tabBarIndicatorStyle: {
+            backgroundColor: '#007BFF',
+            height: 3
+          },
+
+          tabBarLabelStyle: { fontSize: 16},
+
+        }}
+      >
+        <Tab.Screen name='Chats' component={ChatsScreen} />
+        <Tab.Screen name='Status' component={StatusScreen} />
+        <Tab.Screen name='Calls' component={CallScreen} />
 
       </Tab.Navigator>
     </NavigationContainer>
