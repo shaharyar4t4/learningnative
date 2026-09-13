@@ -239,48 +239,105 @@
 //   }
 
 // });
-import 'react-native-gesture-handler';
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react'
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
-import Home from './src/drawer/Home';
-import Setting from './src/drawer/Setting';
-import About from './src/drawer/About';
 
-const Drawer = createDrawerNavigator();
+// implement drawer navigation..
+// import 'react-native-gesture-handler';
+// import { View, Text, StyleSheet } from 'react-native';
+// import React from 'react'
+// import { createDrawerNavigator } from '@react-navigation/drawer';
+// import { NavigationContainer } from '@react-navigation/native';
+// import Home from './src/drawer/Home';
+// import Setting from './src/drawer/Setting';
+// import About from './src/drawer/About';
+
+// const Drawer = createDrawerNavigator();
+
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Drawer.Navigator
+//         screenOptions={{
+//           drawerStyle: {
+//             headerBackground: ' #E6E6E6',
+//             width: 240,
+//           },
+//           drawerLabelStyle: {
+//             fontSize: 18,
+//             color: '#333'
+//           },
+//           headerStyle: {
+//             backgroundColor: '#6200EE'
+//           },
+//           headerTintColor: '#fff',
+//           headerTitleAlign: 'center'
+
+
+//         }
+//         }
+//       >
+//         <Drawer.Screen name="Home" component={Home} />
+//         <Drawer.Screen name="About" component={About} />
+//         <Drawer.Screen name="Setting" component={Setting} />
+//       </Drawer.Navigator>
+//     </NavigationContainer>
+//   )
+// }
+
+// export default App;
+
+// implement the bottom tab navigation..
+import { View, Text } from 'react-native'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeViewScreen from './src/bottomtab/HomeViewScreen'
+import SettingViewScreen from './src/bottomtab/SettingViewScreen'
+import ProfileViewScreen from './src/bottomtab/SettingViewScreen'
+import Icon from 'react-native-vector-icons/Ionicons'
+
+const Tab = createBottomTabNavigator();
+
+const getTabBarIcon = (routeName, focused, color, size) => {
+  let iconName;
+  if(routeName === 'Home'){
+    iconName = focused ? 'home': 'home-outline';
+  } else if(routeName === 'Profile'){
+    iconName = focused ? 'home' : 'home-outline';
+  } else if(routeName === 'Setting'){
+    iconName = focused ? 'settings' : 'settings-outline';
+  }
+return <Icon name={iconName} size ={size} color={color}/>
+};
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator
-        screenOptions={{
-          drawerStyle: {
-            headerBackground: ' #E6E6E6',
-            width: 240,
-          },
-          drawerLabelStyle: {
-            fontSize: 18,
-            color: '#333'
-          },
-          headerStyle: {
-            backgroundColor: '#6200EE'
-          },
-          headerTintColor: '#fff',
-          headerTitleAlign: 'center'
+      <Tab.Navigator
+       screenOptions={
+        //it allocated the which is rendering currently..
+        ({ route }) =>({
+          tabBarIcon:({focused, color, size}) => getTabBarIcon(
+            route.name, // route name means ye abhi home ha ye profile screen par ha..
+            focused, // target screen
+            color, // allocated color
+            size // size of icon
+          ),
 
+          tabBarActiveTintColor: '#007bff',
+          tabBarInactiveTintColor: 'grey',
+          tabBarStyle:{
+            paddingBottom: 5,
+            height: 60,
+          }
+        })
+       }>
+        <Tab.Screen name= 'Home' component={HomeViewScreen}/>
+        <Tab.Screen name= 'Setting' component={SettingViewScreen}/>
+        <Tab.Screen name= 'Profile' component={ProfileViewScreen}/>
 
-        }
-        }
-      >
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="About" component={About} />
-        <Drawer.Screen name="Setting" component={Setting} />
-      </Drawer.Navigator>
+      </Tab.Navigator>
     </NavigationContainer>
   )
 }
-
-
 
 export default App;

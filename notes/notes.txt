@@ -553,6 +553,8 @@ const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>
 
 ==================================================================
 
+Lecture - 40 Drawer design..
+
 cmd 
 1. npm install @react-navigation/drawer
 2. npm install react-native-gesture-handler react-native-reanimated react-native-worklets
@@ -562,8 +564,6 @@ add one plugin in code (Go from babel.config.js)
 --> bottom of present
 plugins: ['react-native-worklets/plugin']
 
-
-Lecture - 40 Drawer design..
 
 Learning about Drawer companents
 
@@ -593,3 +593,15 @@ Learning about Drawer companents
         <Drawer.Screen name="About" component={About} />
         <Drawer.Screen name="Setting" component={Setting} />
       </Drawer.Navigator>
+
+
+==================================================================
+
+Lecture - 41 Bottom tab navigation.. and also learning the vector Icons..
+
+cmd 
+
+1. npm i react-native-vector-icons
+
+and also add the line on build gradle files 
+here is line: apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
