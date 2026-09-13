@@ -1,3 +1,5 @@
+//c code for components
+
 // import { View, Text, Button, StyleSheet, SectionList } from 'react-native'
 // import React from 'react'
 // // import SearchBar from './src/components/SearchBar'
@@ -97,141 +99,188 @@
 // });
 // export default App;
 
-import { StyleSheet, Button, Alert } from 'react-native'
-import React from 'react'
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './src/navigation/HomeScreen'
-import AboutusScreen from './src/navigation/AboutusScreen'
-import LoginScreen from './src/navigation/LoginScreen'
-import MyHeader from './src/components/MyHeader'
-import Example from './src/components/Example'
+// stack navigation
 
-// this is important for implementation of stack navigation..
-const Stack = createNativeStackNavigator();
+// import { StyleSheet, Button, Alert } from 'react-native'
+// import React from 'react'
+// import { NavigationContainer, useNavigation } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import HomeScreen from './src/navigation/HomeScreen'
+// import AboutusScreen from './src/navigation/AboutusScreen'
+// import LoginScreen from './src/navigation/LoginScreen'
+// import MyHeader from './src/components/MyHeader'
+// import Example from './src/components/Example'
 
-// show alert function for globally call..
-const sayHello = () => {
-  Alert.alert('Hello', 'Hello User', [], {cancelable: true});
-};
+// // this is important for implementation of stack navigation..
+// const Stack = createNativeStackNavigator();
 
-// this reference for globally call.. this code specfic use for navigation.
-// const HeaderTitle = () => {
-//   const navigation = useNavigation();
-
-//   return (
-//     <Button
-//       title='One'
-//       color='red'
-//       onPress={() => navigation.navigate('Example')}
-//     />
-//   );
+// // show alert function for globally call..
+// const sayHello = () => {
+//   Alert.alert('Hello', 'Hello User', [], {cancelable: true});
 // };
 
-// const HeaderTitle = () => <Button title='One' color='red'/>;
-const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;
-// this line show the show th companent on header.
-const MyExample = () => <Example/>;
+// // this reference for globally call.. this code specfic use for navigation.
+// // const HeaderTitle = () => {
+// //   const navigation = useNavigation();
+
+// //   return (
+// //     <Button
+// //       title='One'
+// //       color='red'
+// //       onPress={() => navigation.navigate('Example')}
+// //     />
+// //   );
+// // };
+
+// // const HeaderTitle = () => <Button title='One' color='red'/>;
+// const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;
+// // this line show the show th companent on header.
+// const MyExample = () => <Example/>;
+
+// const App = () => {
+//   return (
+
+//     <NavigationContainer>
+//       {/*Prefrom the stack navigation*/}
+//       <Stack.Navigator
+//         screenOptions={{
+//           headerStyle: Styles.header,
+//           headerTitleStyle: Styles.headerTitle,
+//           headerTintColor: '#fff',
+//           // app on screens.
+//           contentStyle: Styles.screenStyle
+//         }}
+//       >
+//         <Stack.Screen
+//           // name of screen.. 
+//           name='Header'
+//           // mention the path of Screen
+//           component={MyHeader}
+//           // apply the CSS in Specific components
+//           options={{
+//             title: 'Header',
+//             // headerTitle: () => <Button title='One' color='red' />,
+//             // headerRight: () => <Button title='One' color='green' />
+//             // call the references values...
+//             // headerTitle: HeaderTitle,
+//             headerTitle: MyExample,
+//             headerRight: HeaderRight,
+//           }}
+
+//         />
+//         <Stack.Screen
+//           // name of screen.. 
+//           name='login'
+//           // mention the path of Screen
+//           component={LoginScreen}
+//           // ye option use hota jab humme apna header ko same rakhana hota ha complete application..
+//           // when you multiple position for this code...
+//           options={{
+//             title: 'Welcome to over Application',
+//             // mostly ye recommands color ap ye call karvo
+//             headerTintColor: 'red',
+//             headerTitleStyle: {
+//               fontSize: 20,
+//               color: 'yellow'
+//             },
+//             headerStyle: {
+//               backgroundColor: 'red',
+//             },
+//           }}
+
+//         />
+
+//         <Stack.Screen
+//           // name of screen..
+//           name='Home'
+//           // mention the path of screen
+//           component={HomeScreen}
+//         // not show the header 
+//         // options={{headerShown: false}}
+
+//         />
+
+//         <Stack.Screen
+//           // name of screen..
+//           name='About'
+//           // mention the path of screen
+//           component={AboutusScreen}
+//           options={{
+//             headerShown: false,
+//           }}
+
+//           />
+
+//         <Stack.Screen
+//           name='Example'
+//           component={Example}
+//         />
+
+
+//       </Stack.Navigator>
+//     </NavigationContainer>
+
+//   )
+// }
+
+// export default App;
+
+// const Styles = StyleSheet.create({
+//   header: {
+//     backgroundColor: '#6200EE',
+
+//   },
+//   headerTitle: {
+//     fontWeight: 'bold',
+//     fontSize: 26,
+//   },
+//   screenStyle: {
+//     backgroundColor: 'lightgreen'
+//   }
+
+// });
+import 'react-native-gesture-handler';
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react'
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import Home from './src/drawer/Home';
+import Setting from './src/drawer/Setting';
+import About from './src/drawer/About';
+
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
-
     <NavigationContainer>
-      {/*Prefrom the stack navigation*/}
-      <Stack.Navigator
+      <Drawer.Navigator
         screenOptions={{
-          headerStyle: Styles.header,
-          headerTitleStyle: Styles.headerTitle,
+          drawerStyle: {
+            headerBackground: ' #E6E6E6',
+            width: 240,
+          },
+          drawerLabelStyle: {
+            fontSize: 18,
+            color: '#333'
+          },
+          headerStyle: {
+            backgroundColor: '#6200EE'
+          },
           headerTintColor: '#fff',
-          // app on screens.
-          contentStyle: Styles.screenStyle
-        }}
+          headerTitleAlign: 'center'
+
+
+        }
+        }
       >
-        <Stack.Screen
-          // name of screen.. 
-          name='Header'
-          // mention the path of Screen
-          component={MyHeader}
-          // apply the CSS in Specific components
-          options={{
-            title: 'Header',
-            // headerTitle: () => <Button title='One' color='red' />,
-            // headerRight: () => <Button title='One' color='green' />
-            // call the references values...
-            // headerTitle: HeaderTitle,
-            headerTitle: MyExample,
-            headerRight: HeaderRight,
-          }}
-
-        />
-        <Stack.Screen
-          // name of screen.. 
-          name='login'
-          // mention the path of Screen
-          component={LoginScreen}
-          // ye option use hota jab humme apna header ko same rakhana hota ha complete application..
-          // when you multiple position for this code...
-          options={{
-            title: 'Welcome to over Application',
-            // mostly ye recommands color ap ye call karvo
-            headerTintColor: 'red',
-            headerTitleStyle: {
-              fontSize: 20,
-              color: 'yellow'
-            },
-            headerStyle: {
-              backgroundColor: 'red',
-            },
-          }}
-
-        />
-
-        <Stack.Screen
-          // name of screen..
-          name='Home'
-          // mention the path of screen
-          component={HomeScreen}
-        // not show the header 
-        // options={{headerShown: false}}
-
-        />
-
-        <Stack.Screen
-          // name of screen..
-          name='About'
-          // mention the path of screen
-          component={AboutusScreen}
-          options={{
-            headerShown: false,
-          }}
-
-          />
-
-        <Stack.Screen
-          name='Example'
-          component={Example}
-        />
-
-
-      </Stack.Navigator>
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="About" component={About} />
+        <Drawer.Screen name="Setting" component={Setting} />
+      </Drawer.Navigator>
     </NavigationContainer>
-
   )
 }
 
+
+
 export default App;
-
-const Styles = StyleSheet.create({
-  header: {
-    backgroundColor: '#6200EE',
-
-  },
-  headerTitle: {
-    fontWeight: 'bold',
-    fontSize: 26,
-  },
-  screenStyle: {
-    backgroundColor: 'lightgreen'
-  }
-
-});

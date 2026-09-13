@@ -550,3 +550,46 @@ const HeaderTitle = () => {
   );
 };
 const HeaderRight = () => <Button title='two' color='green' onPress={sayHello}/>;
+
+==================================================================
+
+cmd 
+1. npm install @react-navigation/drawer
+2. npm install react-native-gesture-handler react-native-reanimated react-native-worklets
+
+add one plugin in code (Go from babel.config.js)
+
+--> bottom of present
+plugins: ['react-native-worklets/plugin']
+
+
+Lecture - 40 Drawer design..
+
+Learning about Drawer companents
+
+"import 'react-native-gesture-handler';"  --> this help to sweep left side..
+
+      <Drawer.Navigator
+        screenOptions={{
+          drawerStyle: {
+            headerBackground: ' #E6E6E6',
+            width: 240,
+          },
+          drawerLabelStyle: {
+            fontSize: 18,
+            color: '#333'
+          },
+          headerStyle: {
+            backgroundColor: '#6200EE'
+          },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center'
+
+
+        }
+        }
+      >
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="About" component={About} />
+        <Drawer.Screen name="Setting" component={Setting} />
+      </Drawer.Navigator>
