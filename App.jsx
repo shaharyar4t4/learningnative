@@ -342,43 +342,68 @@
 
 // export default App;
 
+// implement the top bar navigation..
 
-import { View, Text } from 'react-native'
+// import { View, Text } from 'react-native'
+// import React from 'react'
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+// import CallScreen from './src/topbarnavigation/CallScreen';
+// import ChatsScreen from './src/topbarnavigation/ChatsScreen';
+// import StatusScreen from './src/topbarnavigation/StatusScreen';
+
+// const Tab = createMaterialTopTabNavigator();
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator
+//         screenOptions={{
+//           tabBarActiveTintColor: '#007BFF',
+//           tabBarInactiveTintColor: 'grey',
+//           tabBarStyle: {
+//             backgroundColor: '#fff'
+//           },
+
+//           tabBarIndicatorStyle: {
+//             backgroundColor: '#007BFF',
+//             height: 3
+//           },
+
+//           tabBarLabelStyle: { fontSize: 16},
+
+//         }}
+//       >
+//         <Tab.Screen name='Chats' component={ChatsScreen} />
+//         <Tab.Screen name='Status' component={StatusScreen} />
+//         <Tab.Screen name='Calls' component={CallScreen} />
+
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   )
+// }
+
+// export default App;
+
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import CallScreen from './src/topbarnavigation/CallScreen';
-import ChatsScreen from './src/topbarnavigation/ChatsScreen';
-import StatusScreen from './src/topbarnavigation/StatusScreen';
+import AsyncStoreage from './src/components/AsyncStoreage'
 
-const Tab = createMaterialTopTabNavigator();
 const App = () => {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={{
-          tabBarActiveTintColor: '#007BFF',
-          tabBarInactiveTintColor: 'grey',
-          tabBarStyle: {
-            backgroundColor: '#fff'
-          },
-
-          tabBarIndicatorStyle: {
-            backgroundColor: '#007BFF',
-            height: 3
-          },
-
-          tabBarLabelStyle: { fontSize: 16},
-
-        }}
-      >
-        <Tab.Screen name='Chats' component={ChatsScreen} />
-        <Tab.Screen name='Status' component={StatusScreen} />
-        <Tab.Screen name='Calls' component={CallScreen} />
-
-      </Tab.Navigator>
-    </NavigationContainer>
+    <View style={Styles.mainContainer}>
+    
+      <AsyncStoreage/>
+    </View>
   )
 }
 
 export default App;
+
+const Styles = StyleSheet.create({
+    mainContainer:{
+      flex: 1,
+      backgroundColor: '#fff',
+      gep: 10,
+      marginTop: 30,
+    }
+})

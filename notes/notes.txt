@@ -685,3 +685,38 @@ example code
 Lecture - 43 Ayns Storages
 
 cmd 
+
+1. npm i @react-native-async-storage/async-storage
+
+    // this func is specific for user save name
+    const saveusername = async () => {
+        await AsyncStorage.setItem('username', username);
+        // emtry the textfield
+        setusename('');
+
+        Alert.alert('Username Saved');
+    };
+    // this func is specific for user get name
+    const getusername = async () => {
+        const saveusername = await AsyncStorage.getItem('username');
+        if (saveusername) {
+            setstoreusername(saveusername);
+        } else {
+            Alert.alert('Username not found');
+
+        }
+    };
+    // this func is specific for user remove name
+    const removeusername = async () => {
+        await AsyncStorage.removeItem('usename');
+        setstoreusername('');
+
+        Alert.alert('Username is Removed');
+
+    };
+
+ ==================================================================
+
+ Lecture - 43 Image background
+
+cmd 
