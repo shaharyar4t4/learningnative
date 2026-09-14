@@ -11,4 +11,4 @@ const ProfileViewScreen = () => {
   )
 }
 
-export default ProfileViewScreen
+export default ProfileViewScreen;
