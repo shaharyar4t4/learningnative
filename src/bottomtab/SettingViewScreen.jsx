@@ -10,4 +10,4 @@ const SettingViewScreen = () => {
   )
 }
 
-export default SettingViewScreen
+export default SettingViewScreen;
