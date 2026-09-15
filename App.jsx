@@ -386,12 +386,14 @@
 
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import AsyncStoreage from './src/components/AsyncStoreage'
+import ImageCompenentsexample from './src/components/ImageCompenentsexample'
+// import AsyncStoreage from './src/components/AsyncStoreage'
 
 const App = () => {
   return (
     <View style={Styles.mainContainer}>
-      <AsyncStoreage/>
+      {/* <AsyncStoreage/> */}
+      <ImageCompenentsexample/>
     </View>
   )
 }

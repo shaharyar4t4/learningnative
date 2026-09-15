@@ -720,3 +720,11 @@ cmd
  Lecture - 43 Image background
 
 cmd 
+
+tow type of images 
+
+1. background image (which cover the whole background)
+2. forground image (which is cover the specific Container or specific area)
+
+remote image ---> is refer the online image show
+local image --> which is store on PC 
