@@ -391,7 +391,6 @@ import AsyncStoreage from './src/components/AsyncStoreage'
 const App = () => {
   return (
     <View style={Styles.mainContainer}>
-    
       <AsyncStoreage/>
     </View>
   )
