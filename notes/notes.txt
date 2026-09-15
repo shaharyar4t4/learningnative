@@ -728,3 +728,29 @@ tow type of images
 
 remote image ---> is refer the online image show
 local image --> which is store on PC 
+
+just define local images 
+const localImage = require('../../image/image-react-native.png');
+
+    <ImageBackground
+    // {/*the ImageBackground is discontainous just because it not work.. mostly user prefer the <image/>  */}
+    source={localImage}
+    style={styles.backImage}
+    resizeMode='cover'
+    >
+    <View style={styles.content}>
+       <Text style={styles.text}>Hi there!</Text> 
+        <Image
+        source={remoteImage}
+        style={styles.image}
+        resizeMode='cover'
+        />
+        <Image
+        source={backgroundImage}
+        style={styles.image}
+        resizeMode='cover'
+        />
+
+        
+    </View>
+    </ImageBackground>
