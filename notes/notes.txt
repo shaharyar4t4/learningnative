@@ -768,3 +768,29 @@ Learning about SafeAreaview and SafeAreaProvide
   </SafeAreaView>
 </SafeAreaProvide>
 
+// example code 
+
+import { NewAppScreen } from '@react-native/new-app-screen';
+import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import LoginScreen from '../core/temp/LoginScreen';
+
+function App() {
+
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#fff', padding:20 }} edges={["top", "left"]}>
+        <LoginScreen />
+      </SafeAreaView>
+    </SafeAreaProvider>
+
+  );
+}
+
+export default App;
+
+
