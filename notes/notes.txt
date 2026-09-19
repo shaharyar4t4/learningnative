@@ -754,3 +754,17 @@ const localImage = require('../../image/image-react-native.png');
         
     </View>
     </ImageBackground>
+
+==================================================================
+
+Lecture 44 -- SafeAreaView
+
+Learning about SafeAreaview and SafeAreaProvide 
+
+
+<SafeAreaProivder>
+  <SafeAreaView  edge={["top", "right", "left", "bottom"]}>
+     
+  </SafeAreaView>
+</SafeAreaProvide>
+
